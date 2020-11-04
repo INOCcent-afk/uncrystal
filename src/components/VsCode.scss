@@ -1,0 +1,90 @@
+$darkgreen: #00523b;
+$lightgreen: #00935c;
+$dark: #43464e;
+
+.vscode-hero {
+  min-height: 550px;
+  width: 100%;
+  background-image: url("./images/code_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  .vscode-card {
+    padding: 30px 5%;
+    width: 100%;
+    &-content {
+      color: #fff;
+      height: 300px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+        color: rgb(226, 224, 224);
+        font-family: sans-serif;
+
+        span {
+          font-weight: bold;
+          color: #f04e23;
+        }
+      }
+      button {
+        background: #f04e23;
+        width: 280px;
+        height: 40px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        font-family: "Open sans", sans-serif;
+        transition: all 0.8s ease;
+        cursor: pointer;
+        &:hover {
+          background: $dark;
+        }
+      }
+    }
+  }
+  .vscode-card-img {
+    img {
+      width: 80vw;
+      max-width: 1000px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .vscode-hero {
+    justify-content: center;
+    flex-direction: row;
+
+    .vscode-card {
+      &-content {
+        height: 380px;
+        h1 {
+          font-size: 35px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .vscode-card-img {
+      align-self: flex-end;
+      img {
+        width: 50vw;
+      }
+    }
+  }
+}

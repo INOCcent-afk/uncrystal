@@ -1,0 +1,392 @@
+$darkgreen: #00523b;
+$lightgreen: #00935c;
+$dark: #43464e;
+
+.pricelist-hero {
+  background-image: url("./images/pricing-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  padding: 100px 5% 0 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-content {
+    h1 {
+      font-size: 20px;
+      color: $dark;
+    }
+    h1:nth-child(2) {
+      color: $lightgreen;
+    }
+    p {
+      font-size: 16px;
+      padding: 10px 0;
+      font-family: sans-serif;
+      color: $dark;
+    }
+  }
+  &-img {
+    img {
+      width: 250px;
+    }
+  }
+}
+
+.pricelist-packages {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 5%;
+  background: #f6f8fa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+
+  .package {
+    background: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    min-height: 800px;
+    width: 100%;
+    max-width: 350px;
+
+    &-title {
+      padding: 20px 5%;
+      h1 {
+        color: $darkgreen;
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+        color: $dark;
+      }
+    }
+    &-size {
+      background: #f6f8fa;
+      height: 70px;
+      padding: 20px 5%;
+      p {
+        font-size: 12px;
+        color: $dark;
+
+        span {
+          font-size: 16px;
+          font-weight: bold;
+          color: $lightgreen;
+        }
+      }
+    }
+    &-price {
+      padding: 5px 5%;
+      min-height: 100px;
+      width: 100%;
+      &-title {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p {
+          font-size: 40px;
+        }
+        .priceinfo {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      button {
+        width: 100%;
+        height: 40px;
+        font-weight: bold;
+        font-family: "Open sans", sans-serif;
+        border: none;
+        color: $lightgreen;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        border: 1px solid $lightgreen;
+        outline: none;
+
+        &:hover {
+          color: #fff;
+          background: $lightgreen;
+        }
+      }
+    }
+    &-footer {
+      min-height: 700px;
+      padding: 30px 5%;
+      border-bottom: 1px solid #7d8291;
+      &-item {
+        h1 {
+          font-size: 14px;
+          color: #7d8291;
+        }
+        p {
+          color: #7d8291;
+          font-size: 12px;
+          padding: 7px 0;
+          span {
+            color: $lightgreen;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &-btn {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        width: 80%;
+        height: 40px;
+        font-weight: bold;
+        font-family: "Open sans", sans-serif;
+        outline: none;
+        color: $lightgreen;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        border: 1px solid $lightgreen;
+        &:hover {
+          color: #fff;
+          background: $lightgreen;
+        }
+      }
+    }
+  }
+  .pricelist-footer {
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+      p {
+        font-size: 25px !important;
+        color: $lightgreen !important;
+        text-align: center;
+      }
+    }
+    p {
+      color: #7d8291;
+      font-size: 12px;
+      padding: 7px 0;
+      span {
+        color: $lightgreen;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.orangeT {
+  color: #f04e23 !important;
+}
+.orangeBtn {
+  color: #f04e23 !important;
+  border: 1px solid #f04e23 !important;
+
+  &:hover {
+    color: #fff !important;
+    background: #f04e23 !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .pricelist-hero-container {
+    width: 100%;
+    background: #f6f8fa;
+  }
+  .pricelist-hero {
+    background-image: url("./images/pricing-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+
+    &-content {
+      max-width: 500px;
+      h1 {
+        font-size: 35px;
+        color: $dark;
+      }
+      h1:nth-child(2) {
+        color: $lightgreen;
+      }
+      p {
+        font-size: 14px;
+        padding: 10px 0;
+        font-family: sans-serif;
+        color: $dark;
+      }
+    }
+    &-img {
+      img {
+        width: 300px;
+      }
+    }
+  }
+  .pricelist-packages {
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px 5%;
+    background: #f6f8fa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+    .package {
+      background: #fff;
+      box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+      min-height: 800px;
+      width: 100%;
+      max-width: 350px;
+
+      &-title {
+        padding: 20px 5%;
+        h1 {
+          color: $darkgreen;
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          color: $dark;
+        }
+      }
+      &-size {
+        background: #f6f8fa;
+        height: 70px;
+        padding: 20px 5%;
+        p {
+          font-size: 12px;
+          color: $dark;
+
+          span {
+            font-size: 16px;
+            font-weight: bold;
+            color: $lightgreen;
+          }
+        }
+      }
+      &-price {
+        padding: 5px 5%;
+        min-height: 100px;
+        width: 100%;
+        &-title {
+          padding-bottom: 10px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          p {
+            font-size: 40px;
+          }
+          .priceinfo {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        button {
+          width: 100%;
+          height: 40px;
+          font-weight: bold;
+          font-family: "Open sans", sans-serif;
+          border: none;
+          color: $lightgreen;
+          background: transparent;
+          cursor: pointer;
+          transition: all 0.4s ease;
+          border: 1px solid $lightgreen;
+          outline: none;
+
+          &:hover {
+            color: #fff;
+            background: $lightgreen;
+          }
+        }
+      }
+      &-footer {
+        min-height: 700px;
+        padding: 30px 5%;
+        border-bottom: 1px solid #7d8291;
+        &-item {
+          h1 {
+            font-size: 14px;
+            color: #7d8291;
+          }
+          p {
+            color: #7d8291;
+            font-size: 12px;
+            padding: 7px 0;
+            span {
+              color: $lightgreen;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      &-btn {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          width: 80%;
+          height: 40px;
+          font-weight: bold;
+          font-family: "Open sans", sans-serif;
+          outline: none;
+          color: $lightgreen;
+          background: transparent;
+          cursor: pointer;
+          transition: all 0.4s ease;
+          border: 1px solid $lightgreen;
+          &:hover {
+            color: #fff;
+            background: $lightgreen;
+          }
+        }
+      }
+    }
+    .pricelist-footer {
+      width: 100%;
+      padding: 20px 5%;
+
+      &-title {
+        p {
+          font-size: 25px !important;
+          color: $lightgreen !important;
+          text-align: center;
+        }
+      }
+
+      p {
+        color: #7d8291;
+        font-size: 12px;
+        padding: 7px 0;
+        span {
+          color: $lightgreen;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
